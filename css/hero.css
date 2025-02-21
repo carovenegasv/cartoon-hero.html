@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+
+header {
+    background-color: #00143F;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Aplicamos Passion One SOLO a h1 y h2 */
+ h1 {
+    font-family: "Passion One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0D173F;
+    font-size: 80px;
+}
+
+
+h2 {
+    font-family: "Passion One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0D173F;
+    font-size: 30px;
+    margin: 40px 0 10px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif !important;
+}
+
+ul, ol {
+    font-family: 'Helvetica', 'Arial', sans-serif !important;
+}
+
+
+/* Color específico para el h1 dentro del header */
+header h1 {
+    color: #F9F9FA;
+    font-size: 100px;
+}
+
+header img {
+    border-radius: 150px;
+    width: 500px;
+}
+
+
+main{
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+main img{ 
+    max-width: 100%;
+
+}
+
+a{
+    color: #1E4A63;
+}
+
+a:hover{
+    color: #F9F9f9;
+    background-color: #0D173F;
+}
+
+footer{
+    background-color: #00143F;
+    text-align: center;
+    padding: 50px;
+}
+footer p{ 
+    color:#F9F9f9;
+    font-size: 16px;
+    margin: 0;
+}
+
+footer a{ 
+    color: #F9F9f9;
+}
+
+footer a:hover{ 
+    opacity: .5;
+    background-color: transparent;
+}
+
+
+p.caption{
+    color: #999999;
+    font-style: italic;
+    margin-top: 0;
+}
