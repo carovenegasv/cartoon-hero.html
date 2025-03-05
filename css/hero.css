@@ -20,7 +20,7 @@ header {
     font-weight: 400;
     font-style: normal;
     color: #0D173F;
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 
@@ -51,7 +51,8 @@ header h1 {
 
 header img {
     border-radius: 150px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 
@@ -100,4 +101,62 @@ p.caption{
     color: #999999;
     font-style: italic;
     margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        color: #F9F9FA;
+        font-size: 3rem;}
+
+        h1 {
+            font-family: "Passion One", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #0D173F;
+            font-size: 3rem;
+        }
+}
+
+.whatsapp-button{
+
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #29A71A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+
+.whatsapp-button img{
+    max-width: 70%;
+    height: auto;
+}
+
+/* Ocultamos el icono de Dory por defecto */
+.whatsapp-button .hover-icon {
+    display: none;
+}
+
+/* Cuando pasamos el mouse, cambiamos el icono */
+.whatsapp-button:hover .default-icon {
+    display: none; /* Ocultamos WhatsApp */
+    
+}
+
+.whatsapp-button:hover .hover-icon {
+    display: block; /* Mostramos Dory */
+}
+
+/* Cambia la imagen en hover y también el color de fondo */
+.whatsapp-button:hover {
+    background-color: #A0D2D3; /* Nuevo color de fondo cuando aparece Dory */
+    max-width: 80%;
 }
