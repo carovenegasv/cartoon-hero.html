@@ -140,8 +140,8 @@ p.caption{
     height: auto;
 }
 
-/* Ocultamos el icono de Dory por defecto */
-.whatsapp-button .hover-icon {
+/* Ocultamos el icono de Dory y nemo por defecto */
+.whatsapp-button .hover-icon, .whatsapp-button .hover2-icon {
     display: none;
 }
 
@@ -160,3 +160,28 @@ p.caption{
     background-color: #A0D2D3; /* Nuevo color de fondo cuando aparece Dory */
     max-width: 80%;
 }
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .whatsapp-button .hover-icon, .whatsapp-button .hover2-icon {
+        display: none;
+    }
+        .whatsapp-button:hover .hover2-icon {
+            display: block; /* Mostramos Nemo */
+
+
+    }
+
+    .whatsapp-button:hover .hover-icon {
+        display: none; /* ocultamos a Dory en hover */
+    }
+
+
+
+}
+
+
